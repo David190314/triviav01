@@ -1,0 +1,7 @@
+.trivia__app-quez {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}

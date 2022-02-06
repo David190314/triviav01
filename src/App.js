@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+import { TriviaProvider } from "./TriviaContext/index.js";
+import { HomeApp } from "./Home/Home";
+import { PrivateRoute } from "./Routes/PrivateRouter";
 
 function App() {
+  // const [initialTrivia, setInitialTrivia] = React.useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TriviaProvider>
+      <BrowserRouter>
+        <Route
+          path="/"
+          exact={true}
+          component={HomeApp}
+          // render={() => <HomeApp  />}
+        />
+        <PrivateRoute />
+      </BrowserRouter>
+    </TriviaProvider>
   );
 }
 
-export default App;
+export { App };

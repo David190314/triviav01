@@ -1,0 +1,33 @@
+.container__result-quez {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.container__titles-score {
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__titles-score > h1 {
+  margin: 10px 0 10px 0 !important;
+}
+
+.container__result-trivia {
+  display: flex;
+  flex-direction: column;
+  box-sizing: content-box;
+}
+.button__result__trivia-redirect {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media only screen and (max-width: 468px) {
+  .container__result-trivia {
+    padding: 0;
+    margin: 10px 2px 0 2px;
+  }
+}
