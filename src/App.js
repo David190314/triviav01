@@ -5,7 +5,6 @@ import { HomeApp } from "./Home/Home";
 import { PrivateRoute } from "./Routes/PrivateRouter";
 
 function App() {
-  // const [initialTrivia, setInitialTrivia] = React.useState(false);
   return (
     <TriviaProvider>
       <BrowserRouter>
@@ -13,7 +12,6 @@ function App() {
           path="/"
           exact={true}
           component={HomeApp}
-          // render={() => <HomeApp  />}
         />
         <PrivateRoute />
       </BrowserRouter>
