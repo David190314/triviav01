@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './ButtonRedirectApp.css'
+import "./ButtonRedirectApp.css";
 const ButtonRedirectPages = ({ value, path, functionsButtons }) => {
   return (
     <Link

@@ -9,7 +9,7 @@ import "./Home.css";
 const HomeApp = () => {
   return (
     <TriviaContext.Consumer>
-      {({setInitialTrivia, initialTrivia }) => {
+      {({ setInitialTrivia, initialTrivia }) => {
         return (
           <div className="home">
             <Titles descriptionTitle={"Welcome to the Trivia Challenge!"} />

@@ -2,10 +2,10 @@ import React from "react";
 import { TriviaContext } from "../TriviaContext";
 import { useHistory } from "react-router-dom";
 import { generateQuez } from "../FuncionesReload/generateQuez";
-import './ButtonResponseQuez.css'
+import "./ButtonResponseQuez.css";
 
 const Button = ({ value }) => {
-  let history = useHistory()
+  let history = useHistory();
   return (
     <TriviaContext.Consumer>
       {({
@@ -16,7 +16,7 @@ const Button = ({ value }) => {
         resultTrivia,
         setScored,
         scored,
-        setLoading,
+        setLoading
       }) => {
         return (
           <input

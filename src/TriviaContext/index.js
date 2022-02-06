@@ -15,11 +15,6 @@ function TriviaProvider(props) {
   useEffect(() => {
     getData().then((response) => {
       const { data } = response;
-      if (response.status === 200) {
-        setTimeout(() => {
-          // setLoading(false);
-        }, 2000);
-      }
       setResulTrivia([])
       setQuestions(data.results);
       setScored(0)

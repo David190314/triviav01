@@ -1,6 +1,6 @@
 export function functionsButtons(
   stateFunctionsButtonsRedirect,
-  boolenModularState,
+  boolenModularState
 ) {
   stateFunctionsButtonsRedirect(!boolenModularState);
 }
